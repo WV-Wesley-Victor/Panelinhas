@@ -1,7 +1,7 @@
 :root {
     --primeira-cor: #015c92;
     --segunda-cor: #2d82b5;
-    --terceira-cor: rgb(83, 167, 216);
+    --terceira-cor: #53a7d8;
     --quarta-cor: #88cdf6;
     --quinta-cor: #bce6ff;
 }
@@ -21,6 +21,16 @@
 
 .centro {
     padding: 50px 125px;
+}
+
+.centro-opinioes {
+    padding: 0;
+}
+
+.centro-titulo-opniao {
+    padding: 50px 125px 0;
+    font-weight: bold;
+    font-size: 40px;
 }
 
 .header {
@@ -119,7 +129,7 @@ a:hover {
     top: 0;
     left: 0;
     width: 100%;
-    height: 650px;
+    height: 715px;
     background: linear-gradient(to right,
             #e2f1fa,
             var(--quinta-cor),
@@ -212,7 +222,7 @@ a:hover {
 
 .secao-contato {
     background-color: var(--quinta-cor);
-    margin: 100px 125px;
+    margin: 55px 125px 100px;
     border-radius: 10px;
     padding: 15px;
 }
@@ -237,7 +247,6 @@ body {
     background: var(--quinta-cor);
     border-radius: 32px;
     position: relative;
-    box-shadow: #4a526030 0px 70px 30px -50px;
 }
 
 .card .profile-pic {
@@ -298,7 +307,7 @@ body {
 
 .card .bottom .bottom-bottom {
     position: absolute;
-    bottom: 1.3rem;
+    bottom: 1.4rem;
     left: 1.5rem;
     right: 1.5rem;
     text-align: center;
@@ -328,4 +337,59 @@ body {
 
 .cards {
     display: flex;
+}
+
+.opinioes {
+    width: 1050px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.opinioes .cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+
+.opinioes::-webkit-scrollbar {
+    display: none;
+}
+
+.opinioes-wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#backBtn,
+#nextBtn {
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+    transition: all 0.5s ease;
+}
+
+#backBtn:hover,
+#nextBtn:hover {
+    transform: scale(1.1);
+}
+
+.comentarios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    margin-top: 145px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.margin {
+    width: 45%;
+    margin: 20px 0;
 }

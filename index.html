@@ -11,6 +11,7 @@
     <link rel="icon" href="assets/icon/panelas.png" />
     <link rel="stylesheet" href="css/home.css" />
     <script src="script/top.js"></script>
+    <script src="script/scroll.js"></script>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" />
 </head>
@@ -42,73 +43,118 @@
             </div>
         </section>
     </div>
-    <section class="centro">
-        <h2>As opiniões de nossos clientes</h2>
-        <div class="cards">
-            <div class="card">
-                <div class="profile-pic">
-                    <img src="assets/img/pexels-anastasiya-lobanovskaya-789303.jpg" alt="Sofia Santos" />
-                </div>
-                <div class="bottom">
-                    <div class="content">
-                        <span class="name">Encantada com Panelinhas</span>
-                        <span class="about-me">Lar transformado em conto de fadas! Inovação, detalhes e magia
-                            em cada produto da Panelinhas. Agradeço pela experiência
-                            especial.</span>
+    <section class="comentarios">
+        <h2 class="centro-titulo-opniao">As opiniões de nossos clientes</h2>
+        <p class="margin">
+            Descubra o que nossos clientes têm a dizer sobre a experiência
+            excepcional que proporcionamos. Sua satisfação é a nossa prioridade, e
+            estamos comprometidos em superar expectativas
+        </p>
+
+        <div class="opinioes-wrap centro-opinioes">
+            <img src="assets/icon/arrow.png" alt="Seta para esquerda" id="backBtn" />
+            <div class="opinioes">
+                <div class="cards">
+                    <div class="card">
+                        <div class="profile-pic">
+                            <img src="assets/img/pexels-anastasiya-lobanovskaya-789303.jpg" alt="Sofia Santos" />
+                        </div>
+                        <div class="bottom">
+                            <div class="content">
+                                <span class="name">Encantada com Panelinhas</span>
+                                <span class="about-me">Lar transformado em conto de fadas! Inovação, detalhes e
+                                    magia em cada produto da Panelinhas. Agradeço pela
+                                    experiência especial</span>
+                            </div>
+                            <div class="bottom-bottom">
+                                <p><span>Sofia Santos</span></p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="bottom-bottom">
-                        <p><span>Sofia Santos</span></p>
+                    <div class="card">
+                        <div class="profile-pic">
+                            <img src="assets/img/pexels-jan-kopřiva-3525908.jpg" alt="Luiz Henrique" />
+                        </div>
+                        <div class="bottom">
+                            <div class="content">
+                                <span class="name">Satisfeito com Panelinhas</span>
+                                <span class="about-me">Minha experiência com a Panelinhas é incrível! Recomendo
+                                    para quem busca tornar a casa mais especial</span>
+                            </div>
+                            <div class="bottom-bottom">
+                                <p><span>Luiz Henrique</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="profile-pic">
+                            <img src="assets/img/pexels-joen-nguyen-2599509.jpg" alt="André Souza" />
+                        </div>
+                        <div class="bottom">
+                            <div class="content">
+                                <span class="name">Apaixonado pela Panelinhas</span>
+                                <span class="about-me">A Panelinhas oferece soluções incríveis para um lar
+                                    especial, com produtos de alta qualidade. Recomendo para uma
+                                    casa cheia de estilo e amor</span>
+                            </div>
+                            <div class="bottom-bottom">
+                                <p><span>André Souza</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="profile-pic">
+                            <img src="assets/img/pexels-min-an-1003979.jpg" alt="Maria Silva" />
+                        </div>
+                        <div class="bottom">
+                            <div class="content">
+                                <span class="name">Devota da Panelinhas</span>
+                                <span class="about-me">A Panelinhas é minha escolha para elegância e qualidade.
+                                    Recomendo a todos em busca de perfeição em estilo e
+                                    funcionalidade</span>
+                            </div>
+                            <div class="bottom-bottom">
+                                <p><span>Maria Silva</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="profile-pic">
+                            <img src="assets/img/pexels-danik-prihodko-8219320.jpg" alt="Isabella Costa" />
+                        </div>
+                        <div class="bottom">
+                            <div class="content">
+                                <span class="name">Aficionada pela Panelinhas</span>
+                                <span class="about-me">A Panelinhas é meu refúgio de qualidade e estilo! Recomendo
+                                    para transformar o lar com produtos que superam
+                                    expectativas</span>
+                            </div>
+                            <div class="bottom-bottom">
+                                <p><span>Isabella Costa</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="profile-pic">
+                            <img src="assets/img/pexels-nina-hill-13452650.jpg" alt="Daniel Martins" />
+                        </div>
+                        <div class="bottom">
+                            <div class="content">
+                                <span class="name">Fã da Panelinhas</span>
+                                <span class="about-me">A Panelinhas é minha escolha principal, com soluções
+                                    inovadoras e qualidade excepcional. Recomendo para uma
+                                    experiência única</span>
+                            </div>
+                            <div class="bottom-bottom">
+                                <p><span>Daniel Martins</span></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="profile-pic">
-                    <img src="assets/img/pexels-anastasiya-lobanovskaya-789303.jpg" alt="Sofia Santos" />
-                </div>
-                <div class="bottom">
-                    <div class="content">
-                        <span class="name">Encantada com Panelinhas</span>
-                        <span class="about-me">Lar transformado em conto de fadas! Inovação, detalhes e magia
-                            em cada produto da Panelinhas. Agradeço pela experiência
-                            especial.</span>
-                    </div>
-                    <div class="bottom-bottom">
-                        <p><span>Sofia Santos</span></p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="profile-pic">
-                    <img src="assets/img/pexels-anastasiya-lobanovskaya-789303.jpg" alt="Sofia Santos" />
-                </div>
-                <div class="bottom">
-                    <div class="content">
-                        <span class="name">Encantada com Panelinhas</span>
-                        <span class="about-me">Lar transformado em conto de fadas! Inovação, detalhes e magia
-                            em cada produto da Panelinhas. Agradeço pela experiência
-                            especial.</span>
-                    </div>
-                    <div class="bottom-bottom">
-                        <p><span>Sofia Santos</span></p>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="profile-pic">
-                    <img src="assets/img/pexels-anastasiya-lobanovskaya-789303.jpg" alt="Sofia Santos" />
-                </div>
-                <div class="bottom">
-                    <div class="content">
-                        <span class="name">Encantada com Panelinhas</span>
-                        <span class="about-me">Lar transformado em conto de fadas! Inovação, detalhes e magia
-                            em cada produto da Panelinhas. Agradeço pela experiência
-                            especial.</span>
-                    </div>
-                    <div class="bottom-bottom">
-                        <p><span>Sofia Santos</span></p>
-                    </div>
-                </div>
-            </div>
+            <img src="assets/icon/arrow (1).png" alt="Seta para direita" id="nextBtn" />
         </div>
     </section>
     <article class="secao-contato">
@@ -119,7 +165,7 @@
                     Estamos prontos para atender às suas necessidades, oferecendo
                     soluções para transformar seu lar em um ambiente acolhedor.
                     Comprometidos em proporcionar as melhores alternativas para o seu
-                    espaço.
+                    espaço
                 </p>
                 <a href="index.html" class="button"><span class="button-content">Entre em Contato</span></a>
             </div>
