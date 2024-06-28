@@ -16,6 +16,16 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 .centro {
     padding: 50px 125px;
 }
@@ -38,6 +48,7 @@
 
 a {
     transition: all 0.5s linear;
+    font-size: 20px;
 }
 
 a:hover {
@@ -57,9 +68,8 @@ a:hover {
 }
 
 .titulo {
-    font-size: 60px;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    font-size: 54px;
+    padding-bottom: 20px;
 }
 
 .paragrafo {
@@ -73,9 +83,9 @@ a:hover {
     justify-content: center;
     position: relative;
     width: max-content;
-    padding: 1rem;
+    padding: 1.1rem;
     border-radius: 5px;
-    background: var(--terceira-cor);
+    background: var(--segunda-cor);
 }
 
 .button:hover::before {
@@ -84,7 +94,8 @@ a:hover {
 
 .button-content {
     z-index: 1;
-   color: white;
+    color: white;
+    font-size: 18px;
 }
 
 .button::before {
@@ -97,7 +108,7 @@ a:hover {
     border-radius: inherit;
     background: linear-gradient(82.3deg,
             var(--primeira-cor) 10.8%,
-            var(--terceira-cor) 94.3%);
+            var(--segunda-cor) 94.3%);
     transition: all 0.5s;
 }
 
@@ -124,6 +135,7 @@ a:hover {
 .footer .direitos {
     text-align: center;
     margin-top: 50px;
+    font-size: 20px;
 }
 
 .lista-footer {
@@ -139,14 +151,13 @@ a:hover {
 
 .paragrafo-footer {
     margin: 20px 0;
+    font-size: 20px;
 }
 
 .redes-sociais li a img {
-    width: 30px;
+    width: 35px;
     transition: all 0.5s ease;
 }
-
-/* Parei aqui */
 
 .redes-sociais {
     display: flex;
@@ -175,13 +186,10 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
     grid-column: span 5;
 }
 
 .imagem {
-    order: 1;
-    margin: auto;
     grid-column: span 7;
 }
 
@@ -198,13 +206,14 @@ a:hover {
 }
 
 .texto h2 {
-    font-weight: bold;
-    font-size: 50px;
+    font-size: 45px;
     margin: 0 0 16px;
 }
 
 .texto p {
-    margin: 0 0 16px;
+    margin: 0 50px 16px 0;
+    font-size: 20px;
+    max-width: 630px;
 }
 
 body {
@@ -234,9 +243,8 @@ body {
 
 .card .profile-pic img {
     object-fit: cover;
-    width: 100%;
     height: 100%;
-    object-position: 0px 0px;
+    width: 100%;
 }
 
 .card .bottom {
@@ -262,10 +270,8 @@ body {
 }
 
 .card .bottom .content .name {
-    display: block;
     font-size: 1.2rem;
     color: white;
-    font-weight: bold;
 }
 
 .card .bottom .content .about-me {
@@ -280,7 +286,6 @@ body {
     bottom: 1.4rem;
     left: 1.5rem;
     right: 1.5rem;
-    text-align: center;
 }
 
 .card:hover .bottom {
@@ -302,11 +307,7 @@ body {
 
 .bottom-bottom p span {
     color: white;
-    font-size: 1.2rem;
-}
-
-.cards {
-    display: flex;
+    font-size: 20px;
 }
 
 .opinioes {
@@ -322,6 +323,7 @@ body {
     grid-gap: 20px;
     padding: 10px;
     flex: none;
+    justify-content: center;
 }
 
 .opinioes::-webkit-scrollbar {
@@ -329,10 +331,8 @@ body {
 }
 
 .opinioes-wrap {
-    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 #backBtn,
@@ -362,23 +362,23 @@ body {
 .margin {
     width: 45%;
     margin: 20px 0;
+    font-size: 20px;
 }
 
 #btnTopo {
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    background-color: #442918;
+    background-color: var(--primeira-cor);
     border: none;
     cursor: pointer;
     position: fixed;
     bottom: 25px;
     right: 25px;
-    display: none;
 }
 
 .svgIcon {
-    width: 12px;
+    width: 15px;
     transition-duration: 0.5s;
 }
 
@@ -387,9 +387,190 @@ body {
 }
 
 #btnTopo:hover .svgIcon {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
-html {
-    scroll-behavior: smooth;
+.cor-do-p {
+    color: var(--primeira-cor);
+}
+
+.botoes {
+    display: flex;
+    gap: 30px;
+}
+
+.imagem-principal {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.imagem-principal img {
+    width: 100%;
+    height: 100%;
+    max-width: 650px;
+    max-height: 650px;
+}
+
+.button-produto {
+    background-color: var(--terceira-cor);
+}
+
+.button-produto::before {
+    background: linear-gradient(82.3deg,
+            var(--segunda-cor) 10.8%,
+            var(--terceira-cor) 94.3%);
+}
+
+@media screen and (max-width: 1265px) {
+    .opinioes {
+        width: 650px;
+    }
+
+    .opinioes .cards {
+        grid-template-columns: auto auto;
+    }
+
+    .opinioes .cards .card:last-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .opinioes {
+        width: 300px;
+    }
+
+    .opinioes .cards {
+        grid-template-columns: auto;
+    }
+
+    .opinioes .cards .card:nth-last-child(-n + 2) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1265px) {
+    .centro {
+        padding: 50px 80px;
+    }
+
+    .lista {
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 1075px) {
+    .centro {
+        padding: 40px 40px;
+    }
+
+    .lista {
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .lista {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 895px) {
+    .lista {
+        gap: 15px;
+    }
+
+    .titulo {
+        font-size: 45px;
+    }
+}
+
+@media screen and (min-width: 881px) {
+    .bar input[type="checkbox"] {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .lista {
+        gap: 15px;
+    }
+
+    .titulo {
+        font-size: 45px;
+    }
+
+    .header-menu {
+        position: absolute;
+        right: 0;
+        top: 80px;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .show-menu {
+        min-height: 300px;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 2rem 2rem 2rem 2rem;
+        background-color: var(--terceira-cor);
+        border-radius: 10px 0 0 10px;
+        box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-menu li a {
+        padding: 1rem 3rem;
+    }
+
+    input[type="checkbox"] {
+        visibility: hidden;
+    }
+
+    label.bar {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .bar span {
+        position: absolute;
+        width: 27px;
+        height: 5px;
+        background: #272d38;
+        border-radius: 100px;
+        transition: 0.5s ease;
+        left: -15px;
+    }
+
+    .bar span.top {
+        top: 0;
+    }
+
+    .bar span.middle {
+        top: 7px;
+    }
+
+    .bar span.bottom {
+        bottom: 0;
+    }
+
+    input[type]:checked~span.top {
+        transform: rotate(45deg);
+        transform-origin: top left;
+        width: 28px;
+        bottom: 0;
+        top: -6px;
+        left: -11px;
+    }
+
+    input[type]:checked~span.bottom {
+        transform: rotate(-45deg);
+        transform-origin: top left;
+        width: 28px;
+        bottom: 0;
+    }
+
+    input[type]:checked~span.middle {
+        opacity: 0;
+    }
 }

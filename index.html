@@ -21,37 +21,45 @@
     <div class="background"></div>
     <div class="centro">
         <header class="header">
-            <a href="index.html" class="logo">Panelinhas</a>
+            <a href="index.html" class="logo"><span class="cor-do-p">P</span>anelinhas</a>
             <nav>
-                <ul class="lista">
+                <label class="bar" for="check">
+                    <input type="checkbox" id="check">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+                </label>
+                <ul class="lista header-menu">
                     <li><a href="index.html">Início</a></li>
-                    <!-- Arrumar os links -->
-                    <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#">Produtos</a></li>
-                    <li><a href="#">Depoimentos</a></li>
+                    <li><a href="#sobreNos">Sobre Nós</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
                     <li>
-                        <a href="index.html" class="button"><span class="button-content">Entre em Contato</span></a>
+                        <a href="https://api.whatsapp.com/send?phone=5511987810793" target="_blank" class="button"><span
+                                class="button-content">Entre em Contato</span></a>
                     </li>
                 </ul>
             </nav>
         </header>
         <section class="apresentacao">
             <div>
-                <h1 class="titulo">Transforme Sua Casa em um Refúgio Aconchegante</h1>
+                <h1 class="titulo">Tudo o Que Você Precisa para Seu Lar</h1>
                 <p class="paragrafo">
-                    Comprometidos em oferecer as melhores soluções para o seu lar.
+                    Dedicados a oferecer soluções ideais para o seu lar.
                 </p>
-                <div>
-                    <a href="index.html" class="button"><span class="button-content">Entre em Contato</span></a>
-                    <a href="index.html" class="button"><span class="button-content">Nossos Produtos</span></a>
+                <div class="botoes">
+                    <a href="https://api.whatsapp.com/send?phone=5511987810793" target="_blank" class="button"><span
+                            class="button-content">Entre em Contato</span></a>
+                    <a href="produtos.html" class="button button-produto"><span class="button-content">Nossos
+                            Produtos</span></a>
                 </div>
             </div>
-            <div class="imagem">
+            <div class="imagem imagem-principal">
                 <img src="./assets/img/moveis.png" alt="Móveis" />
             </div>
         </section>
     </div>
-    <section class="comentarios">
+    <section class="comentarios" id="depoimentos">
         <h2 class="centro-titulo-opniao">Depoimentos de Nossos Clientes</h2>
         <p class="margin">
             Descubra o que nossos clientes têm a dizer sobre a experiência
@@ -59,7 +67,7 @@
             estamos comprometidos em superar expectativas.
         </p>
 
-        <div class="opinioes-wrap centro-opinioes">
+        <div class="opinioes-wrap">
             <img src="./assets/icons/setaParaEsquerda.png" alt="Seta para esquerda" id="backBtn" />
             <div class="opinioes">
                 <div class="cards">
@@ -175,9 +183,11 @@
                     Comprometidos em proporcionar as melhores alternativas para o seu
                     espaço.
                 </p>
-                <div>
-                    <a href="index.html" class="button"><span class="button-content">Entre em Contato</span></a>
-                    <a href="index.html" class="button"><span class="button-content">Nossos Produtos</span></a>
+                <div class="botoes">
+                    <a href="https://api.whatsapp.com/send?phone=5511987810793" target="_blank" class="button"><span
+                            class="button-content">Entre em Contato</span></a>
+                    <a href="produtos.html" class="button button-produto"><span class="button-content">Nossos
+                            Produtos</span></a>
                 </div>
             </div>
             <div class="grid-item imagem">
@@ -189,19 +199,20 @@
         <div class="derrubar">
             <div>
                 <a href="index.html" class="logo">Panelinhas</a>
-                <p class="paragrafo-footer">
-                    Crie um lar aconchegante e convidativo.
-                </p>
+                <p class="paragrafo-footer">Tudo para seu Lar.</p>
                 <nav>
                     <ul class="redes-sociais">
                         <li>
-                            <a href="#"><img src="./assets/icons/instagram.png" alt="Instagram" /></a>
+                            <a href="https://www.instagram.com/panelinhas.casa/" target="_blank"><img
+                                    src="./assets/icons/instagram.png" alt="Instagram" /></a>
                         </li>
                         <li>
-                            <a href="#"><img src="./assets/icons/whatsapp.png" alt="Whatsapp" /></a>
+                            <a href="https://api.whatsapp.com/send?phone=5511987810793" target="_blank"><img
+                                    src="./assets/icons/whatsapp.png" alt="Whatsapp" /></a>
                         </li>
                         <li>
-                            <a href="#"><img src="./assets/icons/facebook.png" alt="Facebook" /></a>
+                            <a href="https://www.tiktok.com/@pv19633" target="_blank"><img
+                                    src="./assets/icons/tiktok.png" alt="Facebook" /></a>
                         </li>
                     </ul>
                 </nav>
@@ -211,19 +222,21 @@
                 <nav>
                     <ul class="lista lista-footer">
                         <li><a href="index.html">Início</a></li>
-                        <li><a href="#">Sobre Nós</a></li>
-                        <li><a href="#">Produtos</a></li>
-                        <li><a href="#">Depoimentos</a></li>
+                        <li><a href="#sobreNos">Sobre Nós</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
                     </ul>
                 </nav>
             </div>
             <div>
-                <h2 class="titulo-footer contato-footer">Faça um Pedido</h2>
-                <a href="index.html" class="button"><span class="button-content">Entre em Contato</span></a>
+                <h2 class="titulo-footer">Faça um Pedido</h2>
+                <a href="https://api.whatsapp.com/send?phone=5511987810793" target="_blank" class="button"><span
+                        class="button-content">Entre em Contato</span></a>
             </div>
             <div>
-                <h2 class="titulo-footer contato-footer">Veja os Produtos</h2>
-                <a href="index.html" class="button"><span class="button-content">Nossos Produtos</span></a>
+                <h2 class="titulo-footer">Veja os Produtos</h2>
+                <a href="produtos.html" class="button button-produto"><span class="button-content">Nossos
+                        Produtos</span></a>
             </div>
         </div>
         <p class="direitos">

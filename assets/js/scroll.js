@@ -1,19 +1,23 @@
 document.addEventListener("DOMContentLoaded", function () {
-  let scrollContainer = document.querySelector(".opinioes");
-  let backBtn = document.getElementById("backBtn");
-  let nextBtn = document.getElementById("nextBtn");
+  const scrollContainer = document.querySelector(".opinioes");
+  const backBtn = document.getElementById("backBtn");
+  const nextBtn = document.getElementById("nextBtn");
 
-  function smoothScroll(target, direction) {
-    let start = scrollContainer.scrollLeft;
-    let increment = direction === "next" ? 1050 : -1050;
-    let end = start + increment;
-    let duration = 1000;
+  function smoothScroll(target, direction, duration = 1000) {
+    const start = scrollContainer.scrollLeft;
+    const totalWidth = scrollContainer.scrollWidth;
+    const numElements = 2;
+    const increment =
+      direction === "next"
+        ? totalWidth / numElements
+        : -totalWidth / numElements;
+    const end = start + increment;
     let startTime = null;
 
     function animateScroll(currentTime) {
       if (!startTime) startTime = currentTime;
-      let timeElapsed = currentTime - startTime;
-      let progress = Math.min(timeElapsed / duration, 1);
+      const timeElapsed = currentTime - startTime;
+      const progress = Math.min(timeElapsed / duration, 1);
       scrollContainer.scrollLeft = start + increment * progress;
       if (timeElapsed < duration) requestAnimationFrame(animateScroll);
     }
