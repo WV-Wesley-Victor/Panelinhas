@@ -24,7 +24,7 @@
             <a href="index.html" class="logo"><span class="cor-do-p">P</span>anelinhas</a>
             <nav>
                 <label class="bar" for="check">
-                    <input type="checkbox" id="check">
+                    <input type="checkbox" id="check" />
                     <span class="top"></span>
                     <span class="middle"></span>
                     <span class="bottom"></span>
@@ -42,7 +42,7 @@
             </nav>
         </header>
         <section class="apresentacao">
-            <div>
+            <div class="apresentacao-texto">
                 <h1 class="titulo">Tudo o Que Você Precisa para Seu Lar</h1>
                 <p class="paragrafo">
                     Dedicados a oferecer soluções ideais para o seu lar.
@@ -169,6 +169,56 @@
                         </div>
                     </div>
                 </div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="profile-pic">
+                            <img src="./assets/img/yumiAlcantara.jpg" alt="Yumi Alcantara" />
+                        </div>
+                        <div class="bottom">
+                            <div class="content">
+                                <span class="name">Apaixonada por Panelinhas</span>
+                                <span class="about-me">A Panelinhas é minha escolha para móveis e utensílios de
+                                    qualidade. Recomendo a todos que buscam estilo e
+                                    funcionalidade.</span>
+                            </div>
+                            <div class="bottom-bottom">
+                                <p><span>Yumi Alcantara</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="profile-pic">
+                            <img src="./assets/img/sofiaLopez.jpg" alt="Sofia Lopez" />
+                        </div>
+                        <div class="bottom">
+                            <div class="content">
+                                <span class="name">Amante da Panelinhas</span>
+                                <span class="about-me">A Panelinhas é minha escolha para qualidade e estilo!
+                                    Recomendo para transformar o lar com produtos que superam
+                                    expectativas.</span>
+                            </div>
+                            <div class="bottom-bottom">
+                                <p><span>Sofia Lopez</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="profile-pic">
+                            <img src="./assets/img/lucasMorgan.jpg" alt="Lucas Morgan" />
+                        </div>
+                        <div class="bottom">
+                            <div class="content">
+                                <span class="name">Entusiasta da Panelinhas</span>
+                                <span class="about-me">A Panelinhas é minha escolha principal, com soluções
+                                    inovadoras e qualidade excepcional. Recomendo para uma
+                                    experiência única.</span>
+                            </div>
+                            <div class="bottom-bottom">
+                                <p><span>Lucas Morgan</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <img src="./assets/icons/setaParaDireita.png" alt="Seta para direita" id="nextBtn" />
         </div>
@@ -183,60 +233,64 @@
                     Comprometidos em proporcionar as melhores alternativas para o seu
                     espaço.
                 </p>
-                <div class="botoes">
+                <div class="botoes botoes-contato">
                     <a href="https://api.whatsapp.com/send?phone=5511987810793" target="_blank" class="button"><span
                             class="button-content">Entre em Contato</span></a>
                     <a href="produtos.html" class="button button-produto"><span class="button-content">Nossos
                             Produtos</span></a>
                 </div>
             </div>
-            <div class="grid-item imagem">
+            <div class="grid-item imagem imagem-contato">
                 <img src="./assets/img/conecte-se.png" alt="Contato" />
             </div>
         </div>
     </article>
     <footer class="footer centro-footer">
         <div class="derrubar">
-            <div>
-                <a href="index.html" class="logo">Panelinhas</a>
-                <p class="paragrafo-footer">Tudo para seu Lar.</p>
-                <nav>
-                    <ul class="redes-sociais">
-                        <li>
-                            <a href="https://www.instagram.com/panelinhas.casa/" target="_blank"><img
-                                    src="./assets/icons/instagram.png" alt="Instagram" /></a>
-                        </li>
-                        <li>
-                            <a href="https://api.whatsapp.com/send?phone=5511987810793" target="_blank"><img
-                                    src="./assets/icons/whatsapp.png" alt="Whatsapp" /></a>
-                        </li>
-                        <li>
-                            <a href="https://www.tiktok.com/@pv19633" target="_blank"><img
-                                    src="./assets/icons/tiktok.png" alt="Facebook" /></a>
-                        </li>
-                    </ul>
-                </nav>
+            <div class="primeira-derrubada">
+                <div>
+                    <a href="index.html" class="logo">Panelinhas</a>
+                    <p class="paragrafo-footer">Tudo para seu Lar.</p>
+                    <nav>
+                        <ul class="redes-sociais">
+                            <li>
+                                <a href="https://www.instagram.com/panelinhas.casa/" target="_blank"><img
+                                        src="./assets/icons/instagram.png" alt="Instagram" /></a>
+                            </li>
+                            <li>
+                                <a href="https://api.whatsapp.com/send?phone=5511987810793" target="_blank"><img
+                                        src="./assets/icons/whatsapp.png" alt="Whatsapp" /></a>
+                            </li>
+                            <li>
+                                <a href="https://www.tiktok.com/@pv19633" target="_blank"><img
+                                        src="./assets/icons/tiktok.png" alt="Facebook" /></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div>
+                    <h2 class="titulo-footer">Explore</h2>
+                    <nav>
+                        <ul class="lista lista-footer">
+                            <li><a href="index.html">Início</a></li>
+                            <li><a href="#sobreNos">Sobre Nós</a></li>
+                            <li><a href="produtos.html">Produtos</a></li>
+                            <li><a href="#depoimentos">Depoimentos</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <div>
-                <h2 class="titulo-footer">Explore</h2>
-                <nav>
-                    <ul class="lista lista-footer">
-                        <li><a href="index.html">Início</a></li>
-                        <li><a href="#sobreNos">Sobre Nós</a></li>
-                        <li><a href="produtos.html">Produtos</a></li>
-                        <li><a href="#depoimentos">Depoimentos</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div>
-                <h2 class="titulo-footer">Faça um Pedido</h2>
-                <a href="https://api.whatsapp.com/send?phone=5511987810793" target="_blank" class="button"><span
-                        class="button-content">Entre em Contato</span></a>
-            </div>
-            <div>
-                <h2 class="titulo-footer">Veja os Produtos</h2>
-                <a href="produtos.html" class="button button-produto"><span class="button-content">Nossos
-                        Produtos</span></a>
+            <div class="segunda-derrubada">
+                <div>
+                    <h2 class="titulo-footer">Faça um Pedido</h2>
+                    <a href="https://api.whatsapp.com/send?phone=5511987810793" target="_blank" class="button"><span
+                            class="button-content">Entre em Contato</span></a>
+                </div>
+                <div>
+                    <h2 class="titulo-footer">Veja os Produtos</h2>
+                    <a href="produtos.html" class="button button-produto"><span class="button-content">Nossos
+                            Produtos</span></a>
+                </div>
             </div>
         </div>
         <p class="direitos">
@@ -250,6 +304,7 @@
             </path>
         </svg>
     </button>
+    <!-- Arrumar os scripts -->
     <script src="./assets/js/topo.js"></script>
     <script src="./assets/js/scroll.js"></script>
 </body>

@@ -6,11 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
   function smoothScroll(target, direction, duration = 1000) {
     const start = scrollContainer.scrollLeft;
     const totalWidth = scrollContainer.scrollWidth;
-    const numElements = 2;
-    const increment =
-      direction === "next"
-        ? totalWidth / numElements
-        : -totalWidth / numElements;
+    const containerWidth = scrollContainer.clientWidth;
+    const increment = direction === "next" ? totalWidth / 3 : -totalWidth / 3;
     const end = start + increment;
     let startTime = null;
 
@@ -19,7 +16,17 @@ document.addEventListener("DOMContentLoaded", function () {
       const timeElapsed = currentTime - startTime;
       const progress = Math.min(timeElapsed / duration, 1);
       scrollContainer.scrollLeft = start + increment * progress;
-      if (timeElapsed < duration) requestAnimationFrame(animateScroll);
+
+      const canScrollRight =
+        scrollContainer.scrollLeft < totalWidth - containerWidth;
+      const canScrollLeft = scrollContainer.scrollLeft > 0;
+
+      nextBtn.style.opacity = canScrollRight ? 1 : 0.5;
+      backBtn.style.opacity = canScrollLeft ? 1 : 0.5;
+
+      if (timeElapsed < duration) {
+        requestAnimationFrame(animateScroll);
+      }
     }
 
     requestAnimationFrame(animateScroll);
@@ -31,4 +38,6 @@ document.addEventListener("DOMContentLoaded", function () {
   backBtn.addEventListener("click", () =>
     smoothScroll(scrollContainer, "back")
   );
+
+  backBtn.style.opacity = 0.5;
 });
