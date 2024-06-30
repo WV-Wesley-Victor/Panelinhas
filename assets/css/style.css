@@ -989,3 +989,31 @@ body {
         display: none;
     }
 }
+.produtos-slides img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+.apresentacao-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.produto {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 calc(25% - 20px); /* Ajuste a largura dos cards para 25% menos o gap */
+    box-sizing: border-box;
+}
+
