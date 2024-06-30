@@ -1,4 +1,40 @@
 document.addEventListener("DOMContentLoaded", function () {
+  var checkbox = document.getElementById("check");
+
+  checkbox.addEventListener("change", function () {
+    var headerMenu = document.querySelector(".header-menu");
+    headerMenu.classList.toggle("show-menu", checkbox.checked);
+  });
+});
+
+function voltarAoTopo() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+
+function toggleButtonDisplay() {
+  const btnTopo = document.getElementById("btnTopo");
+  const scrollTop =
+    document.documentElement.scrollTop || document.body.scrollTop;
+
+  if (scrollTop > 20) {
+    btnTopo.style.display = "block";
+    btnTopo.style.opacity = "1";
+  } else {
+    btnTopo.style.opacity = "0";
+    setTimeout(() => {
+      if (btnTopo.style.opacity === "0") {
+        btnTopo.style.display = "none";
+      }
+    }, 300);
+  }
+}
+
+window.addEventListener("scroll", toggleButtonDisplay);
+
+document.addEventListener("DOMContentLoaded", function () {
   const scrollContainer = document.querySelector(".opinioes");
   const backBtn = document.getElementById("backBtn");
   const nextBtn = document.getElementById("nextBtn");
@@ -49,10 +85,12 @@ function carousel() {
   var i;
   var x = document.getElementsByClassName("mySlides");
   for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+    x[i].style.display = "none";
   }
   myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
+  if (myIndex > x.length) {
+    myIndex = 1;
+  }
+  x[myIndex - 1].style.display = "block";
   setTimeout(carousel, 5000);
 }

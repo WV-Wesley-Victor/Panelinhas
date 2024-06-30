@@ -366,7 +366,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 550px;
-    margin-top: 145px;
+    margin-top: 85px;
     margin-bottom: 100px;
     text-align: center;
     padding: 40px;
@@ -382,7 +382,7 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: var(--primeira-cor);
+    background-color: rgba(1, 93, 146, 0.5);
     border: none;
     cursor: pointer;
     position: fixed;
@@ -397,7 +397,7 @@ body {
 }
 
 .svgIcon path {
-    fill: white;
+    fill: rgba(255, 255, 255, 0.8);
 }
 
 #btnTopo:hover .svgIcon {
@@ -435,6 +435,7 @@ body {
             var(--segunda-cor) 10.8%,
             var(--terceira-cor) 94.3%);
 }
+
 .sobre-nos-img img {
     width: 100%;
     max-height: 500px;
@@ -443,41 +444,45 @@ body {
     object-position: top;
 }
 
-  .sobre-nos{
+.sobre-nos {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  .sobre-nos-conteudo{
+}
+
+.sobre-nos-conteudo {
     width: 60%;
     padding-left: 40px;
-  }
-  .sobre-nos-conteudo h2 {
+}
+
+.sobre-nos-conteudo h2 {
     font-size: 25px;
     margin-bottom: 5px;
 }
 
-  .sobre-nos-conteudo h3{
+.sobre-nos-conteudo h3 {
     font-size: 45px;
     margin-bottom: 5px;
-  }
+}
 
-  .sobre-nos-conteudo p{
+.sobre-nos-conteudo p {
     font-size: 20px;
     margin: 15px 0;
-  }
-  .linha-horizontal {
+}
+
+.linha-horizontal {
     border-bottom: 5px solid var(--primeira-cor);
     width: 25%;
     display: inline-block;
     vertical-align: middle;
 }
+
 .sobre-nos-img {
     width: 50%;
     display: flex;
     justify-content: start;
-    
 }
+
 .produtos-slides img {
     width: 100%;
     border-radius: 10px;
@@ -577,13 +582,20 @@ body {
     .footer .direitos {
         font-size: 16px;
     }
-    .sobre-nos-conteudo h2{
+
+    .sobre-nos-conteudo h2 {
         font-size: 20px;
     }
-    .sobre-nos-conteudo h3{
+
+    .sobre-nos-conteudo h3 {
         font-size: 40px;
     }
-    .sobre-nos-conteudo p{
+
+    .sobre-nos-conteudo p {
+        font-size: 16px;
+    }
+
+    .produto p {
         font-size: 16px;
     }
 }
@@ -734,7 +746,8 @@ body {
     input[type]:checked~span.middle {
         opacity: 0;
     }
-    .sobre-nos-conteudo{
+
+    .sobre-nos-conteudo {
         padding-left: 20px;
     }
 }
@@ -785,14 +798,17 @@ body {
         display: none;
     }
 }
-@media screen and (max-width: 845px){
+
+@media screen and (max-width: 845px) {
     .sobre-nos-conteudo h3 {
         font-size: 30px;
     }
+
     .sobre-nos-conteudo h2 {
         font-size: 16px;
     }
 }
+
 @media screen and (max-width: 800px) {
     .grid-container {
         display: grid;
@@ -819,19 +835,23 @@ body {
         margin-right: 0;
     }
 
-    .sobre-nos{
+    .sobre-nos {
         flex-direction: column;
     }
+
     .sobre-nos-conteudo {
         padding-left: 0;
         width: 100%;
     }
-    .sobre-nos-conteudo h2{
+
+    .sobre-nos-conteudo h2 {
         font-size: 20px;
     }
-    .sobre-nos-conteudo h3{
+
+    .sobre-nos-conteudo h3 {
         font-size: 40px;
     }
+
     .sobre-nos-img {
         width: 60%;
         padding-bottom: 30px;
@@ -848,6 +868,7 @@ body {
     .margin {
         width: 100%;
     }
+
     .sobre-nos-img {
         width: 80%;
     }
@@ -856,7 +877,7 @@ body {
 @media screen and (max-width: 500px) {
     .secao-contato {
         padding: 0 20px 20px 20px;
-        margin: 100px 20px;
+        margin: 150px 20px 100px;
     }
 }
 
@@ -910,11 +931,17 @@ body {
     .texto h2 {
         font-size: 30px;
     }
-    .sobre-nos-conteudo h2{
+
+    .sobre-nos-conteudo h2 {
         font-size: 16px;
     }
-    .sobre-nos-conteudo h3{
+
+    .sobre-nos-conteudo h3 {
         font-size: 30px;
+    }
+
+    .produto-button {
+        width: max-content;
     }
 }
 
@@ -956,10 +983,6 @@ body {
         display: none;
     }
 
-    .comentarios {
-        margin-top: 200px;
-    }
-
     .primeira-derrubada {
         flex-direction: column;
     }
@@ -971,15 +994,18 @@ body {
     .card .bottom .bottom-bottom {
         bottom: 1.7rem;
     }
+
     .sobre-nos-img {
         width: 90%;
     }
 }
+
 @media screen and (max-width: 400px) {
     .sobre-nos-img {
         width: 100%;
     }
 }
+
 @media screen and (max-width: 290px) {
     .imagem-contato {
         height: 200px;
@@ -997,21 +1023,113 @@ body {
 }
 
 .apresentacao-produtos {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    padding: 20px;
-    justify-content: space-between;
+    margin: 20px 0;
+}
+
+@media screen and (max-width: 1000px) {
+    .apresentacao-produtos {
+        grid-template-columns: repeat(2,
+                1fr);
+        /* Mudança para 2 colunas em telas menores */
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .apresentacao-produtos {
+        grid-template-columns: repeat(1,
+                1fr);
+        /* Mudança para 2 colunas em telas menores */
+    }
 }
 
 .produto {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    flex: 1 1 calc(25% - 20px); /* Ajuste a largura dos cards para 25% menos o gap */
-    box-sizing: border-box;
+    background-color: var(--quinta-cor);
+    width: 100%;
+    height: max-content;
+    border-radius: 10px;
 }
 
+.produto div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.produto h2 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.produto p {
+    font-size: 20px;
+}
+
+.produto img {
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.produto-button {
+    margin: 20px 0 25px;
+}
+
+.sobre-nos {
+    padding-top: 150px;
+    padding-bottom: 90px;
+}
+
+.ver-todos-produtos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.ver-todos-produtos-button {
+    width: 50%;
+    min-width: max-content;
+}
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(-5);
+    }
+
+    40% {
+        transform: translateY(-5px);
+    }
+
+    60% {
+        transform: translateY(-7px);
+    }
+}
+.container-seta {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seta {
+    margin-top: 30px;
+    background-image: url(../icons/seta-para-baixo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    animation: bounce 2s infinite;
+    cursor: pointer;
+}
+p.parcelas {
+    font-size: 16px;
+}

@@ -58,6 +58,9 @@
                 <img src="./assets/img/moveis.png" alt="Móveis" />
             </div>
         </section>
+        <div class="container-seta">
+            <a class="seta" href="#sobreNos"></a>
+        </div>
     </div>
     <section class="sobre-nos centro" id="sobreNos">
         <div class="sobre-nos-img">
@@ -84,19 +87,101 @@
     </section>
     <section class="produtos centro">
         <div class="produtos-slides">
-            <img class="mySlides" src="./assets/img/primeiroBanner.png">
-            <img class="mySlides" src="./assets/img/terceiroBanner.png">
-            <img class="mySlides" src="./assets/img/segundoBanner.png">
+            <img class="mySlides" src="./assets/img/primeiroBanner.png" />
+            <img class="mySlides" src="./assets/img/terceiroBanner.png" />
+            <img class="mySlides" src="./assets/img/segundoBanner.png" />
         </div>
-        
         <div class="apresentacao-produtos">
-            <div class="produto">Produto 1</div>
-            <div class="produto">Produto 2</div>
-            <div class="produto">Produto 1</div>
-            <div class="produto">Produto 2</div>
-        </div>        
+            <div class="produto">
+                <img src="./assets/img/poltronaMatrix.jpg" alt="Poltrona Matrix" />
+                <div>
+                    <h2>Poltrona Matrix</h2>
+                    <p>R$ 250,00</p>
+                    <p class="parcelas">Em  até 12x R$ 20.83</p>
+                    <a href="https://api.whatsapp.com/send?phone=5511987810793" target="_blank"
+                        class="button produto-button"><span class="button-content">Entre em Contato</span></a>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="./assets/img/sofaPistacchio.jpg" alt="Sofá Pistacchio" />
+                <div>
+                    <h2>Sofá Pistacchio</h2>
+                    <p>R$ 799,00</p>
+                    <p class="parcelas">Em  até 12x R$ 66,58</p>
+                    <a href="https://api.whatsapp.com/send?phone=5511987810793" target="_blank"
+                        class="button produto-button"><span class="button-content">Entre em Contato</span></a>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="./assets/img/mesaMiami.jpg" alt="Mesa Miami" />
+                <div>
+                    <h2>Mesa Miami</h2>
+                    <p>R$ 894,73</p>
+                    <p class="parcelas">Em  até 12x R$ 74,56</p>
+                    <a href="https://api.whatsapp.com/send?phone=5511987810793" target="_blank"
+                        class="button produto-button"><span class="button-content">Entre em Contato</span></a>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="./assets/img/camaBox.jpg" alt="Cama Box" />
+                <div>
+                    <h2>Cama Box</h2>
+                    <p>R$ 1.475,00</p>
+                    <p class="parcelas">Em  até 12x R$ 122,91</p>
+                    <a href="https://api.whatsapp.com/send?phone=5511987810793" target="_blank"
+                        class="button produto-button"><span class="button-content">Entre em Contato</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="apresentacao-produtos">
+            <div class="produto">
+                <img src="./assets/img/cadeira.jpg" alt="Cadeira Eames" />
+                <div>
+                    <h2>Cadeira Eames</h2>
+                    <p>R$ 200,00</p>
+                    <p class="parcelas">Em  até 12x R$19,44</p>
+                    <a href="https://api.whatsapp.com/send?phone=5511987810793" target="_blank"
+                        class="button produto-button"><span class="button-content">Entre em Contato</span></a>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="./assets/img/escrvaninha.jpg" alt="Escrivaninha Alaska" />
+                <div>
+                    <h2>Escrivaninha Alaska</h2>
+                    <p>R$ 399,99</p>
+                    <p class="parcelas">Em até 7x R$ 57,15</p>
+                    <a href="https://api.whatsapp.com/send?phone=5511987810793" target="_blank"
+                        class="button produto-button"><span class="button-content">Entre em Contato</span></a>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="./assets/img/rack.jpg" alt="Rack Rustic" />
+                <div>
+                    <h2>Rack Rustic</h2>
+                    <p>R$ 299,99</p>
+                    <p class="parcelas">Em até 5x R$ 60,03</p>
+                    <a href="https://api.whatsapp.com/send?phone=5511987810793" target="_blank"
+                        class="button produto-button"><span class="button-content">Entre em Contato</span></a>
+                </div>
+            </div>
+            <div class="produto">
+                <img src="./assets/img/qudro.jpg" alt="Quadro Decorativo" />
+                <div>
+                    <h2>Quadro Decorativo</h2>
+                    <p>R$ 294,00</p>
+                    <p class="parcelas">Em até 5x R$ 58,80</p>
+                    <a href="https://api.whatsapp.com/send?phone=5511987810793" target="_blank"
+                        class="button produto-button"><span class="button-content">Entre em Contato</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="ver-todos-produtos">
+            <a href="produtos.html" class="button button-produto ver-todos-produtos-button"><span
+                    class="button-content">Veja Todos os Produtos</span></a>
+        </div>
     </section>
-    <section class="comentarios" id="depoimentos">
+    <div id="depoimentos"></div>
+    <section class="comentarios">
         <h2 class="centro-titulo-opniao">Depoimentos de Nossos Clientes</h2>
         <p class="margin">
             Descubra o que nossos clientes têm a dizer sobre a experiência
@@ -341,9 +426,7 @@
             </path>
         </svg>
     </button>
-    <!-- Arrumar os scripts -->
-    <script src="./assets/js/topo.js"></script>
-    <script src="./assets/js/scroll.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
