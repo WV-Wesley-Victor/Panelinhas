@@ -435,6 +435,49 @@ body {
             var(--segunda-cor) 10.8%,
             var(--terceira-cor) 94.3%);
 }
+.sobre-nos-img img {
+    width: 100%;
+    max-height: 500px;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: top;
+}
+
+  .sobre-nos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sobre-nos-conteudo{
+    width: 60%;
+    padding-left: 40px;
+  }
+  .sobre-nos-conteudo h2 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+  .sobre-nos-conteudo h3{
+    font-size: 45px;
+    margin-bottom: 5px;
+  }
+
+  .sobre-nos-conteudo p{
+    font-size: 20px;
+    margin: 15px 0;
+  }
+  .linha-horizontal {
+    border-bottom: 5px solid var(--primeira-cor);
+    width: 25%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.sobre-nos-img {
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    
+}
 
 @media screen and (max-width: 1265px) {
     .opinioes {
@@ -526,6 +569,15 @@ body {
     }
 
     .footer .direitos {
+        font-size: 16px;
+    }
+    .sobre-nos-conteudo h2{
+        font-size: 20px;
+    }
+    .sobre-nos-conteudo h3{
+        font-size: 40px;
+    }
+    .sobre-nos-conteudo p{
         font-size: 16px;
     }
 }
@@ -676,6 +728,9 @@ body {
     input[type]:checked~span.middle {
         opacity: 0;
     }
+    .sobre-nos-conteudo{
+        padding-left: 20px;
+    }
 }
 
 @media screen and (max-width: 860px) {
@@ -724,7 +779,14 @@ body {
         display: none;
     }
 }
-
+@media screen and (max-width: 845px){
+    .sobre-nos-conteudo h3 {
+        font-size: 30px;
+    }
+    .sobre-nos-conteudo h2 {
+        font-size: 16px;
+    }
+}
 @media screen and (max-width: 800px) {
     .grid-container {
         display: grid;
@@ -750,6 +812,24 @@ body {
     .texto p {
         margin-right: 0;
     }
+
+    .sobre-nos{
+        flex-direction: column;
+    }
+    .sobre-nos-conteudo {
+        padding-left: 0;
+        width: 100%;
+    }
+    .sobre-nos-conteudo h2{
+        font-size: 20px;
+    }
+    .sobre-nos-conteudo h3{
+        font-size: 40px;
+    }
+    .sobre-nos-img {
+        width: 60%;
+        padding-bottom: 30px;
+    }
 }
 
 @media screen and (max-width: 520px) {
@@ -761,6 +841,9 @@ body {
 
     .margin {
         width: 100%;
+    }
+    .sobre-nos-img {
+        width: 80%;
     }
 }
 
@@ -821,6 +904,12 @@ body {
     .texto h2 {
         font-size: 30px;
     }
+    .sobre-nos-conteudo h2{
+        font-size: 16px;
+    }
+    .sobre-nos-conteudo h3{
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width: 430px) {
@@ -876,8 +965,15 @@ body {
     .card .bottom .bottom-bottom {
         bottom: 1.7rem;
     }
+    .sobre-nos-img {
+        width: 90%;
+    }
 }
-
+@media screen and (max-width: 400px) {
+    .sobre-nos-img {
+        width: 100%;
+    }
+}
 @media screen and (max-width: 290px) {
     .imagem-contato {
         height: 200px;
