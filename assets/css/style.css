@@ -478,6 +478,12 @@ body {
     justify-content: start;
     
 }
+.produtos-slides img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+}
 
 @media screen and (max-width: 1265px) {
     .opinioes {
@@ -989,14 +995,6 @@ body {
         display: none;
     }
 }
-.produtos-slides img {
-    width: 100%;
-    border-radius: 10px;
-    object-fit: cover;
-    object-position: center;
-}
-
-
 
 .apresentacao-produtos {
     display: flex;
