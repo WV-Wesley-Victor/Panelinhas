@@ -44,9 +44,9 @@
         </header>
         <section class="apresentacao">
             <div class="apresentacao-texto">
-                <h1 class="titulo">Tudo o Que Você Precisa para Seu Lar</h1>
+                <h1 class="titulo">Produtos Perfeitos para o Seu Lar</h1>
                 <p class="paragrafo">
-                    Dedicados a oferecer soluções ideais para o seu lar.
+                    Comprometidos em oferecer os produtos ideais para o seu lar.
                 </p>
                 <div class="botoes">
                     <a href="https://api.whatsapp.com/send?phone=5511987810793" target="_blank" class="button"><span
@@ -57,7 +57,7 @@
                 </div>
             </div>
             <div class="imagem imagem-principal">
-                <img src="./assets/img/moveis.png" alt="Móveis" />
+                <img src="./assets/img/produtos.png" alt="Produtos" />
             </div>
         </section>
         <div class="container-seta">
@@ -65,6 +65,29 @@
             <a class="seta" href="#sobreNos"></a>
         </div>
     </div>
+    <section class="produtos centro">
+        <div class="produtos-slides">
+            <img class="mySlides" src="./assets/img/primeiroBanner.png" />
+            <img class="mySlides" src="./assets/img/terceiroBanner.png" />
+            <img class="mySlides" src="./assets/img/segundoBanner.png" />
+        </div>
+        <div id="search-container">
+            <input type="search" id="search-input" placeholder="Search product name here..">
+            <button id="search">Search</button>
+        </div>
+        <div id="buttons">
+            <button class="button-value" onclick="filterProduct('todos')">Todos</button>
+            <button class="button-value" onclick="filterProduct('sala')">Sala</button>
+            <button class="button-value" onclick="filterProduct('cozinha')">Cozinha</button>
+            <button class="button-value" onclick="filterProduct('quarto')">Quarto</button>
+            <button class="button-value" onclick="filterProduct('banheiro')">Banheiro</button>
+            <button class="button-value" onclick="filterProduct('varanda')">Varanda</button>
+            <button class="button-value" onclick="filterProduct('garagem')">Garagem</button>
+            <button class="button-value" onclick="filterProduct('quintal')">Quintal</button>
+            <button class="button-value" onclick="filterProduct('escritório')">Escritório</button>
+        </div>
+        <div class="apresentacao-produtos" id="products"></div>
+    </section>
     <article class="secao-contato">
         <div class="grid-container">
             <div class="grid-item texto">
@@ -147,6 +170,7 @@
         </svg>
     </button>
     <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/produtos.js"></script>
 </body>
 
 </html>
