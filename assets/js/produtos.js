@@ -1,52 +1,226 @@
 let products = {
     data: [
         {
+            productName: "Cadeira Eames",
+            category: ["cozinha","varanda","quintal"],
+            price: 200.00,
+            image: "./assets/img/cadeira.jpg",
+        },
+        {
+            productName: "Ferramentas",
+            category: ["garagem"],
+            price: 199.99,
+            image: "./assets/img/suporte.webp",
+        },
+        {
             productName: "Poltrona Matrix",
-            category: "sala",
+            category: ["sala","quarto","escritório"],
             price: 250.0,
             image: "./assets/img/poltronaMatrix.jpg",
         },
         {
             productName: "Mesa Miami",
-            category: "cozinha",
+            category: ["cozinha","escritório"],
             price: 894.73,
             image: "./assets/img/mesaMiami.jpg",
         },
         {
-            productName: "Poltrona Matrix",
-            category: "sala",
-            price: 250.0,
-            image: "./assets/img/poltronaMatrix.jpg",
+            productName: "Sofá Pistacchio",
+            category: ["sala"],
+            price: 799.00,
+            image: "./assets/img/sofaPistacchio.jpg",
         },
         {
-            productName: "Mesa Miami",
-            category: "cozinha",
-            price: 894.73,
-            image: "./assets/img/mesaMiami.jpg",
+            productName: "Cama Box",
+            category: ["quarto"],
+            price: 1475.00,
+            image: "./assets/img/camaBox.jpg",
         },
         {
-            productName: "Poltrona Matrix",
-            category: "sala",
-            price: 250.0,
-            image: "./assets/img/poltronaMatrix.jpg",
+            productName: "Cadeira Eames",
+            category: ["cozinha","varanda","quintal"],
+            price: 200.00,
+            image: "./assets/img/cadeira.jpg",
         },
         {
-            productName: "Mesa Miami",
-            category: "cozinha",
-            price: 894.73,
-            image: "./assets/img/mesaMiami.jpg",
+            productName: "Escrivaninha",
+            category: ["escritório","quarto"],
+            price: 399.99,
+            image: "./assets/img/escrvaninha.jpg",
         },
         {
-            productName: "Poltrona Matrix",
-            category: "sala",
-            price: 250.0,
-            image: "./assets/img/poltronaMatrix.jpg",
+            productName: "Cadeira Eames",
+            category: ["cozinha","varanda","quintal"],
+            price: 200.00,
+            image: "./assets/img/cadeira.jpg",
         },
         {
-            productName: "Mesa Miami",
-            category: "cozinha",
-            price: 894.73,
-            image: "./assets/img/mesaMiami.jpg",
+            productName: "Rack Rustic",
+            category: ["sala","quarto","escritório"],
+            price: 299.99,
+            image: "./assets/img/rack.jpg",
+        },
+        {
+            productName: "Quadro Decorativo",
+            category: ["quarto", "sala","varanda","escritório"],
+            price: 294.00,
+            image: "./assets/img/qudro.jpg",
+        },
+        {
+            productName: "Estante Freijó",
+            category: ["quarto", "sala","varanda","escritório"],
+            price: 599.99,
+            image: "./assets/img/estante.webp",
+        },
+        {
+            productName: "Cadeira Eames",
+            category: ["cozinha","varanda","quintal"],
+            price: 200.00,
+            image: "./assets/img/cadeira.jpg",
+        },
+        {
+            productName: "Mesa de Centro",
+            category: ["sala","varanda"],
+            price: 299.99,
+            image: "./assets/img/mesaDeCentro.webp",
+        },
+        {
+            productName: "Mesa Lateral",
+            category: ["sala","quarto","varanda","escritório"],
+            price: 200.00,
+            image: "./assets/img/mesaLateral.webp",
+        },
+        {
+            productName: "Cadeira Eames",
+            category: ["cozinha","varanda","quintal"],
+            price: 200.00,
+            image: "./assets/img/cadeira.jpg",
+        },
+        {
+            productName: "Tapete Dixon",
+            category: ["sala","quarto","escritório"],
+            price: 599.00,
+            image: "./assets/img/tapete.jpg",
+        },
+        {
+            productName: "Armário de Cozinha",
+            category: ["cozinha"],
+            price: 1299.99,
+            image: "./assets/img/armarioDeCozinha.avif",
+        },
+        {
+            productName: "Cadeira Eames",
+            category: ["cozinha","varanda","quintal"],
+            price: 200.00,
+            image: "./assets/img/cadeira.jpg",
+        },
+        {
+            productName: "Balcão Lux",
+            category: ["cozinha","varanda"],
+            price: 799.99,
+            image: "./assets/img/balcao.webp",
+        },
+        {
+            productName: "Bancada",
+            category: ["cozinha","varanda"],
+            price: 599.99,
+            image: "./assets/img/bancada.avif",
+        },
+        {
+            productName: "Gabinete de Pia",
+            category: ["cozinha","banheiro"],
+            price: 399.99,
+            image: "./assets/img/gabineteDePia.webp",
+        },
+        {
+            productName: "Carrinho de Cozinha",
+            category: ["cozinha","varanda"],
+            price: 199.99,
+            image: "./assets/img/carrinho.jpg",
+        },
+        {
+            productName: "Prateleira Gendes",
+            category: ["cozinha","varanda","sala","quarto","escritório","banheiro","garagem"],
+            price: 159.99,
+            image: "./assets/img/prateleira.jpg",
+        },
+        {
+            productName: "Gabinete Eccos",
+            category: ["banheiro"],
+            price: 289.99,
+            image: "./assets/img/gabinete.webp",
+        },
+        {
+            productName: "Armário Aéreo",
+            category: ["banheiro","garagem"],
+            price: 559.99,
+            image: "./assets/img/armarioAereo.webp",
+        },
+        {
+            productName: "Armário de Banheiro",
+            category: ["banheiro"],
+            price: 479.99,
+            image: "./assets/img/armarioDeBanheiro.jpg",
+        },
+        {
+            productName: "Porta Toalha",
+            category: ["banheiro"],
+            price: 129.99,
+            image: "./assets/img/portaToalha.webp",
+        },
+        {
+            productName: "Porta Shampoo",
+            category: ["banheiro"],
+            price: 59.00,
+            image: "./assets/img/porta.jpg",
+        },
+        {
+            productName: "Cesto de Roupa",
+            category: ["banheiro","varanda"],
+            price: 39.99,
+            image: "./assets/img/cesto.jpeg",
+        },
+        {
+            productName: "Cadeira Eames",
+            category: ["cozinha","varanda","quintal"],
+            price: 200.00,
+            image: "./assets/img/cadeira.jpg",
+        },
+        {
+            productName: "Bancada de Trabalho",
+            category: ["garagem","varanda"],
+            price: 179.99,
+            image: "./assets/img/bancada.webp",
+        },
+        {
+            productName: "Rack de Carro",
+            category: ["garagem"],
+            price: 299.99,
+            image: "./assets/img/rack.webp",
+        },
+        {
+            productName: "Ferramentas",
+            category: ["garagem"],
+            price: 199.99,
+            image: "./assets/img/suporte.webp",
+        },
+        {
+            productName: "Rack de Carro",
+            category: ["garagem"],
+            price: 299.99,
+            image: "./assets/img/rack.webp",
+        },
+        {
+            productName: "Ferramentas",
+            category: ["garagem"],
+            price: 199.99,
+            image: "./assets/img/suporte.webp",
+        },
+        {
+            productName: "Cadeira Eames",
+            category: ["cozinha","varanda","quintal"],
+            price: 200.00,
+            image: "./assets/img/cadeira.jpg",
         },
     ],
 };
@@ -54,8 +228,9 @@ let products = {
 for (let i of products.data) {
     // Create Card
     let produto = document.createElement("div");
-    // Card should have category
-    produto.classList.add("produto", i.category);
+    // Card should have categories
+    produto.classList.add("produto");
+    i.category.forEach(cat => produto.classList.add(cat));
 
     // Img tag
     let img = document.createElement("img");

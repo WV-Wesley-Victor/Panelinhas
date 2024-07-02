@@ -881,9 +881,10 @@ body {
 
 @media screen and (max-width: 29.0625rem) {
     .imagem-principal img {
-        width: 100%;
+        width: 85%;
         height: 100%;
         z-index: -1;
+        object-fit: cover;
     }
 
     .apresentacao-texto {
@@ -944,6 +945,9 @@ body {
 }
 
 @media screen and (max-width: 26.875rem) {
+    .imagem-principal img {
+        width: 100%;
+    }
 
     #backBtn,
     #nextBtn {
@@ -1042,7 +1046,7 @@ body {
 .produto {
     background-color: var(--quinta-cor);
     width: 100%;
-    height: max-content;
+    height: min-content;
     border-radius: 0.625rem;
 }
 
