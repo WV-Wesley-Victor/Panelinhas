@@ -69,20 +69,44 @@
             <img class="mySlides" src="./assets/img/terceiroBanner.png" />
             <img class="mySlides" src="./assets/img/segundoBanner.png" />
         </div>
+        <div class="input-wrapper">
+            <input class="input-box" type="text" placeholder="Enter your text" />
+            <span class="underline"></span>
+        </div>
+        <a href="#search-container" class="button button-produto"><span class="button-content">Pesquisar</span></a>
+
         <div id="search-container">
-            <input type="search" id="search-input" placeholder="Search product name here..">
+            <input type="search" id="search-input" placeholder="Search product name here.." />
             <button id="search">Search</button>
         </div>
         <div id="buttons">
-            <button class="button-value" onclick="filterProduct('todos')">Todos</button>
-            <button class="button-value" onclick="filterProduct('sala')">Sala</button>
-            <button class="button-value" onclick="filterProduct('cozinha')">Cozinha</button>
-            <button class="button-value" onclick="filterProduct('quarto')">Quarto</button>
-            <button class="button-value" onclick="filterProduct('banheiro')">Banheiro</button>
-            <button class="button-value" onclick="filterProduct('varanda')">Varanda</button>
-            <button class="button-value" onclick="filterProduct('garagem')">Garagem</button>
-            <button class="button-value" onclick="filterProduct('quintal')">Quintal</button>
-            <button class="button-value" onclick="filterProduct('escritório')">Escritório</button>
+            <button class="button-value" onclick="filterProduct('todos')">
+                Todos
+            </button>
+            <button class="button-value" onclick="filterProduct('sala')">
+                Sala
+            </button>
+            <button class="button-value" onclick="filterProduct('cozinha')">
+                Cozinha
+            </button>
+            <button class="button-value" onclick="filterProduct('quarto')">
+                Quarto
+            </button>
+            <button class="button-value" onclick="filterProduct('banheiro')">
+                Banheiro
+            </button>
+            <button class="button-value" onclick="filterProduct('varanda')">
+                Varanda
+            </button>
+            <button class="button-value" onclick="filterProduct('garagem')">
+                Garagem
+            </button>
+            <button class="button-value" onclick="filterProduct('quintal')">
+                Quintal
+            </button>
+            <button class="button-value" onclick="filterProduct('escritório')">
+                Escritório
+            </button>
         </div>
         <div class="apresentacao-produtos" id="products"></div>
     </section>
