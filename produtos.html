@@ -12,6 +12,7 @@
         content="Lar, Residência, Habitação, Conforto, Aconchego, Família, Decoração, Quartos, Cozinha, Banheiro, Jardim, Varanda, Apartamento, Casa, Sofá, Cama, Mesa, Cadeira, Armário, Estante, Escrivaninha, Poltrona, Penteadeira, Rack, Guarda-roupa, Cômoda, Banqueta, Beliche, Talheres, Panelas, Pratos, Copos, Xícaras, Liquidificador, Torradeira, Forno, Micro-ondas, Batedeira, Frigideira, Tapete, Cortina, Almofada, Colchão, Edredom, Lençol, Toalha, Abajur, Luminária, Ventilador, Ar-condicionado, Espelho, Quadro, Relógio, Vaso" />
     <title>Panelinhas</title>
     <link rel="icon" href="./assets/icons/panelinhas.png" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/produtos.css" />
     <link rel="stylesheet"
@@ -69,44 +70,45 @@
             <img class="mySlides" src="./assets/img/terceiroBanner.png" />
             <img class="mySlides" src="./assets/img/segundoBanner.png" />
         </div>
-        <div class="input-wrapper">
-            <input class="input-box" type="text" placeholder="Enter your text" />
-            <span class="underline"></span>
-        </div>
-        <a href="#search-container" class="button button-produto"><span class="button-content">Pesquisar</span></a>
-
         <div id="search-container">
-            <input type="search" id="search-input" placeholder="Search product name here.." />
-            <button id="search">Search</button>
+            <input class="input-box" id="search-input" type="search" placeholder="Buscar produtos" />
+            <a href="#search-container" class="button lupa" id="search"><span class="button-content"><img
+                        src="./assets/icons/lupa.png" alt="Lupa" /></span></a>
         </div>
-        <div id="buttons">
-            <button class="button-value" onclick="filterProduct('todos')">
-                Todos
-            </button>
-            <button class="button-value" onclick="filterProduct('sala')">
-                Sala
-            </button>
-            <button class="button-value" onclick="filterProduct('cozinha')">
-                Cozinha
-            </button>
-            <button class="button-value" onclick="filterProduct('quarto')">
-                Quarto
-            </button>
-            <button class="button-value" onclick="filterProduct('banheiro')">
-                Banheiro
-            </button>
-            <button class="button-value" onclick="filterProduct('varanda')">
-                Varanda
-            </button>
-            <button class="button-value" onclick="filterProduct('garagem')">
-                Garagem
-            </button>
-            <button class="button-value" onclick="filterProduct('quintal')">
-                Quintal
-            </button>
-            <button class="button-value" onclick="filterProduct('escritório')">
-                Escritório
-            </button>
+        <div class="arrows">
+            <div class="swiper-container">
+                <div class="swiper-wrapper" id="buttons">
+                    <button class="button-value swiper-slide" onclick="filterProduct('todos')">
+                        Todos
+                    </button>
+                    <button class="button-value swiper-slide" onclick="filterProduct('sala')">
+                        Sala
+                    </button>
+                    <button class="button-value swiper-slide" onclick="filterProduct('cozinha')">
+                        Cozinha
+                    </button>
+                    <button class="button-value swiper-slide" onclick="filterProduct('quarto')">
+                        Quarto
+                    </button>
+                    <button class="button-value swiper-slide" onclick="filterProduct('banheiro')">
+                        Banheiro
+                    </button>
+                    <button class="button-value swiper-slide" onclick="filterProduct('varanda')">
+                        Varanda
+                    </button>
+                    <button class="button-value swiper-slide" onclick="filterProduct('garagem')">
+                        Garagem
+                    </button>
+                    <button class="button-value swiper-slide" onclick="filterProduct('quintal')">
+                        Quintal
+                    </button>
+                    <button class="button-value swiper-slide" onclick="filterProduct('escritório')">
+                        Escritório
+                    </button>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
         <div class="apresentacao-produtos" id="products"></div>
     </section>
@@ -191,6 +193,7 @@
             </path>
         </svg>
     </button>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/produtos.js"></script>
 </body>

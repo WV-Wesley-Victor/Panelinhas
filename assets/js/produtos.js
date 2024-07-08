@@ -1,12 +1,6 @@
 let products = {
     data: [
         {
-            productName: "Cadeira Eames",
-            category: ["cozinha","varanda","quintal"],
-            price: 200.00,
-            image: "./assets/img/cadeira.jpg",
-        },
-        {
             productName: "Ferramentas",
             category: ["garagem"],
             price: 199.99,
@@ -14,92 +8,72 @@ let products = {
         },
         {
             productName: "Poltrona Matrix",
-            category: ["sala","quarto","escritório"],
+            category: ["sala", "quarto", "escritório"],
             price: 250.0,
             image: "./assets/img/poltronaMatrix.jpg",
         },
         {
             productName: "Mesa Miami",
-            category: ["cozinha","escritório"],
+            category: ["cozinha", "escritório"],
             price: 894.73,
             image: "./assets/img/mesaMiami.jpg",
         },
         {
             productName: "Sofá Pistacchio",
             category: ["sala"],
-            price: 799.00,
+            price: 799.0,
             image: "./assets/img/sofaPistacchio.jpg",
         },
         {
             productName: "Cama Box",
             category: ["quarto"],
-            price: 1475.00,
+            price: 1475.0,
             image: "./assets/img/camaBox.jpg",
         },
-        {
-            productName: "Cadeira Eames",
-            category: ["cozinha","varanda","quintal"],
-            price: 200.00,
-            image: "./assets/img/cadeira.jpg",
-        },
+
         {
             productName: "Escrivaninha",
-            category: ["escritório","quarto"],
+            category: ["escritório", "quarto"],
             price: 399.99,
             image: "./assets/img/escrvaninha.jpg",
         },
-        {
-            productName: "Cadeira Eames",
-            category: ["cozinha","varanda","quintal"],
-            price: 200.00,
-            image: "./assets/img/cadeira.jpg",
-        },
+
         {
             productName: "Rack Rustic",
-            category: ["sala","quarto","escritório"],
+            category: ["sala", "quarto", "escritório"],
             price: 299.99,
             image: "./assets/img/rack.jpg",
         },
         {
             productName: "Quadro Decorativo",
-            category: ["quarto", "sala","varanda","escritório"],
-            price: 294.00,
+            category: ["quarto", "sala", "varanda", "escritório"],
+            price: 294.0,
             image: "./assets/img/qudro.jpg",
         },
         {
             productName: "Estante Freijó",
-            category: ["quarto", "sala","varanda","escritório"],
+            category: ["quarto", "sala", "varanda", "escritório"],
             price: 599.99,
             image: "./assets/img/estante.webp",
         },
-        {
-            productName: "Cadeira Eames",
-            category: ["cozinha","varanda","quintal"],
-            price: 200.00,
-            image: "./assets/img/cadeira.jpg",
-        },
+
         {
             productName: "Mesa de Centro",
-            category: ["sala","varanda"],
+            category: ["sala", "varanda"],
             price: 299.99,
             image: "./assets/img/mesaDeCentro.webp",
         },
         {
             productName: "Mesa Lateral",
-            category: ["sala","quarto","varanda","escritório"],
-            price: 200.00,
+            category: ["sala", "quarto", "varanda", "escritório"],
+            price: 200.0,
             image: "./assets/img/mesaLateral.webp",
         },
-        {
-            productName: "Cadeira Eames",
-            category: ["cozinha","varanda","quintal"],
-            price: 200.00,
-            image: "./assets/img/cadeira.jpg",
-        },
+
         {
             productName: "Tapete Dixon",
-            category: ["sala","quarto","escritório"],
-            price: 599.00,
+            category: ["sala", "quarto", "escritório"],
+            price: 599.0,
             image: "./assets/img/tapete.jpg",
         },
         {
@@ -108,39 +82,42 @@ let products = {
             price: 1299.99,
             image: "./assets/img/armarioDeCozinha.avif",
         },
-        {
-            productName: "Cadeira Eames",
-            category: ["cozinha","varanda","quintal"],
-            price: 200.00,
-            image: "./assets/img/cadeira.jpg",
-        },
+
         {
             productName: "Balcão Lux",
-            category: ["cozinha","varanda"],
+            category: ["cozinha", "varanda"],
             price: 799.99,
             image: "./assets/img/balcao.webp",
         },
         {
             productName: "Bancada",
-            category: ["cozinha","varanda"],
+            category: ["cozinha", "varanda"],
             price: 599.99,
             image: "./assets/img/bancada.avif",
         },
         {
             productName: "Gabinete de Pia",
-            category: ["cozinha","banheiro"],
+            category: ["cozinha", "banheiro"],
             price: 399.99,
             image: "./assets/img/gabineteDePia.webp",
         },
         {
             productName: "Carrinho de Cozinha",
-            category: ["cozinha","varanda"],
+            category: ["cozinha", "varanda"],
             price: 199.99,
             image: "./assets/img/carrinho.jpg",
         },
         {
             productName: "Prateleira Gendes",
-            category: ["cozinha","varanda","sala","quarto","escritório","banheiro","garagem"],
+            category: [
+                "cozinha",
+                "varanda",
+                "sala",
+                "quarto",
+                "escritório",
+                "banheiro",
+                "garagem",
+            ],
             price: 159.99,
             image: "./assets/img/prateleira.jpg",
         },
@@ -152,7 +129,7 @@ let products = {
         },
         {
             productName: "Armário Aéreo",
-            category: ["banheiro","garagem"],
+            category: ["banheiro", "garagem"],
             price: 559.99,
             image: "./assets/img/armarioAereo.webp",
         },
@@ -171,24 +148,19 @@ let products = {
         {
             productName: "Porta Shampoo",
             category: ["banheiro"],
-            price: 59.00,
+            price: 59.0,
             image: "./assets/img/porta.jpg",
         },
         {
             productName: "Cesto de Roupa",
-            category: ["banheiro","varanda"],
+            category: ["banheiro", "varanda"],
             price: 39.99,
             image: "./assets/img/cesto.jpeg",
         },
-        {
-            productName: "Cadeira Eames",
-            category: ["cozinha","varanda","quintal"],
-            price: 200.00,
-            image: "./assets/img/cadeira.jpg",
-        },
+
         {
             productName: "Bancada de Trabalho",
-            category: ["garagem","varanda"],
+            category: ["garagem", "varanda"],
             price: 179.99,
             image: "./assets/img/bancada.webp",
         },
@@ -199,66 +171,94 @@ let products = {
             image: "./assets/img/rack.webp",
         },
         {
-            productName: "Ferramentas",
-            category: ["garagem"],
-            price: 199.99,
-            image: "./assets/img/suporte.webp",
-        },
-        {
-            productName: "Rack de Carro",
-            category: ["garagem"],
-            price: 299.99,
-            image: "./assets/img/rack.webp",
-        },
-        {
-            productName: "Ferramentas",
-            category: ["garagem"],
-            price: 199.99,
-            image: "./assets/img/suporte.webp",
-        },
-        {
             productName: "Cadeira Eames",
-            category: ["cozinha","varanda","quintal"],
-            price: 200.00,
+            category: ["cozinha", "varanda", "quintal"],
+            price: 200.0,
             image: "./assets/img/cadeira.jpg",
+        },
+        {
+            productName: "Gaveteiro",
+            category: ["garagem"],
+            price: 99.99,
+            image: "./assets/img/gaveteiro.jpeg",
+        },
+        {
+            productName: "Ferramentas",
+            category: ["garagem"],
+            price: 150.99,
+            image: "./assets/img/ferramentas.jpeg",
+        },
+        {
+            productName: "Cortador de Grama",
+            category: ["garagem","quintal"],
+            price: 399.99,
+            image: "./assets/img/cortador.jpeg",
+        },
+        {
+            productName: "Mesa de Jardim",
+            category: ["quintal"],
+            price: 599.99,
+            image: "./assets/img/mesa.jpeg",
+        },
+        {
+            productName: "Espreguiçadeira",
+            category: ["quintal"],
+            price: 300.00,
+            image: "./assets/img/espreguiçadeira.jpg",
+        },
+        {
+            productName: "Gazebo",
+            category: ["quintal"],
+            price: 450.00,
+            image: "./assets/img/gazebo.jpg",
+        },
+        {
+            productName: "Cadeira de Balanço",
+            category: ["quintal"],
+            price: 259.99,
+            image: "./assets/img/cadeira.webp",
+        },
+        {
+            productName: "Regador",
+            category: ["quintal"],
+            price: 59.99,
+            image: "./assets/img/regador.png",
+        },
+        {
+            productName: "Kit 2 Vasos",
+            category: ["quintal"],
+            price: 129.99,
+            image: "./assets/img/vasos.jpeg",
         },
     ],
 };
 
 for (let i of products.data) {
-    // Create Card
     let produto = document.createElement("div");
-    // Card should have categories
     produto.classList.add("produto");
-    i.category.forEach(cat => produto.classList.add(cat));
+    i.category.forEach((cat) => produto.classList.add(cat));
 
-    // Img tag
     let img = document.createElement("img");
     img.setAttribute("src", i.image);
     img.setAttribute("alt", i.productName);
     produto.appendChild(img);
 
-    // Create div for product info
     let infoDiv = document.createElement("div");
 
-    // Product name
     let h2 = document.createElement("h2");
     h2.textContent = i.productName;
     h2.classList.add("product-name");
     infoDiv.appendChild(h2);
 
-    // Product price
     let price = document.createElement("p");
     price.textContent = `R$ ${i.price.toFixed(2)}`;
     infoDiv.appendChild(price);
 
-    // Installments
     let parcelas = document.createElement("p");
     parcelas.classList.add("parcelas");
     parcelas.textContent = `Em até 12x R$ ${(i.price / 12).toFixed(2)}`;
     infoDiv.appendChild(parcelas);
 
-    // Contact button
     let a = document.createElement("a");
     a.setAttribute("href", "https://api.whatsapp.com/send?phone=5511987810793");
     a.setAttribute("target", "_blank");
@@ -271,49 +271,35 @@ for (let i of products.data) {
 
     infoDiv.appendChild(a);
 
-    // Append infoDiv to product
     produto.appendChild(infoDiv);
 
-    // Append product to products container
     document.getElementById("products").appendChild(produto);
 }
 
-// Parameter passed from button (Parameter same as category)
 function filterProduct(value) {
-    // Button class code
     let buttons = document.querySelectorAll(".button-value");
     buttons.forEach((button) => {
-        // Check if value equals innerText
         if (value.toUpperCase() == button.innerText.toUpperCase()) {
             button.classList.add("active");
         } else {
             button.classList.remove("active");
         }
     });
-    // Select all cards
     let elements = document.querySelectorAll(".produto");
-    // Loop through all cards
-    elements.forEach(element =>{
-        // Display all cards on "all" button click
-        if(value == "todos"){
+    elements.forEach((element) => {
+        if (value == "todos") {
             element.classList.remove("hide");
         } else {
-            // Check if element contains category class
-            if(element.classList.contains(value)){
-                // Display element base on category
+            if (element.classList.contains(value)) {
                 element.classList.remove("hide");
-            }
-            else{
-                // Hide other elements
+            } else {
                 element.classList.add("hide");
             }
         }
     });
 }
 
-// Search button click
 document.getElementById("search").addEventListener("click", () => {
-    // Initializations
     let searchInput = document.getElementById("search-input").value.toUpperCase();
     if (!searchInput) {
         filterProduct("todos");
@@ -322,26 +308,54 @@ document.getElementById("search").addEventListener("click", () => {
     let elements = document.querySelectorAll(".product-name");
     let cards = document.querySelectorAll(".produto");
     let found = false;
-    // Loop through all elements
     elements.forEach((element, index) => {
-        // Check if text includes the search value
-        if(element.innerText.toUpperCase().includes(searchInput)){
-            // Display matching card
+        if (element.innerText.toUpperCase().includes(searchInput)) {
             cards[index].classList.remove("hide");
             found = true;
-        }
-        else{
-            // Hide others
+        } else {
             cards[index].classList.add("hide");
         }
     });
     if (!found) {
-        // If no products found, show all products
         filterProduct("todos");
     }
 });
 
-// Initially display all products
 window.onload = () => {
     filterProduct("todos");
 };
+
+function updatePlaceholder() {
+    const input = document.getElementById("search-input");
+    if (window.innerWidth <= 300) {
+        input.placeholder = "Pesquisar";
+    } else {
+        input.placeholder = "Buscar produtos";
+    }
+}
+
+updatePlaceholder();
+
+window.addEventListener("resize", updatePlaceholder);
+
+document.getElementById("search").addEventListener("click", function () {
+    performSearch();
+});
+
+document
+    .getElementById("search-input")
+    .addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            document.getElementById("search").click();
+        }
+    });
+
+var swiper = new Swiper(".swiper-container", {
+    slidesPerView: "auto",
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});

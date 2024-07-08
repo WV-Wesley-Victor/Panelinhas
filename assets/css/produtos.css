@@ -1,79 +1,142 @@
-#search-container{
-    margin: 1em 0;
+:root {
+  --primeira-cor: #015c92;
+  --segunda-cor: #2d82b5;
+  --terceira-cor: #53a7d8;
+  --quarta-cor: #88cdf6;
+  --quinta-cor: #bce6ff;
 }
 
-#search-container input {
-    background-color: transparent;
-    width: 40%;
-    border-bottom: 2px solid #110f29;
-    padding: 1em 0.3em;
+#search-container {
+  margin: 1em 0;
+  display: flex;
 }
 
-#search-container input:focus {
-    border-bottom-color: #6759ff;
+.input-box {
+  font-size: 16px;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 2px solid var(--segunda-cor);
+  color: #272d38;
+  width: 100%;
+  background-color: transparent;
+  transition: border-color 0.5s ease-in-out;
+  margin-right: 10px;
 }
 
-#search-container button {
-    padding: 1em 2em;
-    margin-left: 1em;
-    background-color: #6759ff;
-    color: #fff;
-    border-radius: 5px;
-    margin-top: 0.5em;
+.input-box:focus {
+  border-color: var(--primeira-cor);
+  outline: none;
+}
+
+.lupa {
+  width: 70px;
+  height: 50px;
+}
+
+.lupa img {
+  margin-top: 4px;
+  width: 20px;
+  height: 20px;
+}
+
+#buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .button-value {
-    border: 2px solid #6759ff;
-    padding: 1em 2.2em;
-    border-radius: 3em;
-    background-color: transparent;
-    color: #6759ff;
-    cursor: pointer;
+  padding: 1rem;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--segunda-cor);
+  transition: color 0.3s;
+  z-index: 1;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--segunda-cor);
+  cursor: pointer;
+  border-radius: 25px;
+  width: 125px;
 }
 
-.active{
-    background-color: #6759ff;
-    color: #fff;
+.button-value:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--segunda-cor);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.button-value:hover {
+  color: #fff;
+}
+
+.button-value:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.5s;
+}
+
+.button-value:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+.active {
+  background-color: var(--segunda-cor);
+  color: white;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
-.input-wrapper {
-    position: relative;
-    width: 200px;
-    margin: 50px auto;
+.arrows {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-container {
+  overflow: hidden;
+  width: 85%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  color: var(--segunda-cor);
+  cursor: pointer;
+  width: 30px;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+@media screen and (max-width: 650px) {
+  .swiper-container {
+    width: 70%;
   }
-  
-  .input-box {
-    font-size: 16px;
-    padding: 10px 0;
-    border: none;
-    border-bottom: 2px solid #ccc;
-    color: #08AEEA;
-    width: 100%;
-    background-color: transparent;
-    transition: border-color 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 300px) {
+  .swiper-container {
+    width: 80%;
   }
-  
-  .underline {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #08AEEA;
-    transform: scaleX(0);
-    transition: transform 0.3s ease-in-out;
+
+  .swiper-button-next {
+    right: -30px;
   }
-  
-  .input-box:focus {
-    border-color: #08AEEA;
-    outline: none;
+
+  .swiper-button-prev {
+    left: -30px;
   }
-  
-  .input-box:focus + .underline {
-    transform: scaleX(1);
-  }
-  
+}
