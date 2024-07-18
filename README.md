@@ -1,9 +1,9 @@
 # Panelinhas
 
-Bem-vindo ao **Panelinhas**, sua loja de móveis e utensílios domésticos! 
+**Bem-vindo ao Panelinhas!** Sua loja de móveis e utensílios domésticos, **onde você encontra a combinação perfeita de qualidade e estilo**. Oferecemos uma vasta seleção de produtos para **transformar sua casa em um lar verdadeiramente acolhedor e funcional**. Descubra como nossos itens podem **elevar o seu espaço** e tornar cada momento em casa mais especial. Explore e aproveite o melhor em móveis e utensílios que atendem às suas necessidades e desejos!
 ![Captura de tela 2024-07-18 163008](https://github.com/user-attachments/assets/9c3acc77-b9de-46f0-9be3-82491c7e3ea9)
 <p align="center">
-  <a href="https://wv-wesley-victor.github.io/Panelinhas/" target="_blank">Clique aqui para visitar o Panelinhas</a>
+  <a href="https://panelinhas.netlify.app/" target="_blank">Clique aqui para visitar o Panelinhas</a>
 </p>
 
 ## Sobre
