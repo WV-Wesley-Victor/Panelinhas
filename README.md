@@ -1,6 +1,10 @@
 # Panelinhas
 
 Bem-vindo ao **Panelinhas**, sua loja de móveis e utensílios domésticos! 
+![Captura de tela 2024-07-18 163008](https://github.com/user-attachments/assets/9c3acc77-b9de-46f0-9be3-82491c7e3ea9)
+<p align="center">
+  <a href="https://wv-wesley-victor.github.io/Panelinhas/" target="_blank">Clique aqui para visitar o Panelinhas</a>
+</p>
 
 ## Sobre
 
